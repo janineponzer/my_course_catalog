@@ -83,7 +83,7 @@ def get_timetable_of(weekday):
             print(data[1])
             print(data[2])
             for elem in data[3]:
-                if elem[:2] == weekday:
+                if elem[:2] == weekday[:2]:
                     print(elem)
                 # prev_day = day
             print("\n")

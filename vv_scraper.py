@@ -2,7 +2,7 @@ import requests
 from bs4 import BeautifulSoup
 from operator import itemgetter
 
-weekdays = ["Mo","Di","Mi","Do","Fr","semesterbegleitend"]
+weekdays = ["Montag","Dienstag","Mittwoch","Donnerstag","Freitag","semesterbegleitend"]
 
 def get_title():
     title = soup.find("div", class_="modules_container").find("h1").get_text()
@@ -67,7 +67,7 @@ def get_timetable_of(weekday):
             for item in get_course_items(id):
                 dates = get_course_time(item)
                 for date in dates:
-                    if date[:2] == weekday:
+                    if date[:2] == weekday[:2]
                         presorted_data.append((get_course_name(item), get_course_category(item), get_course_instructor(item), dates))
                 
     sorted_data = sorted(presorted_data, key=itemgetter(3,0))

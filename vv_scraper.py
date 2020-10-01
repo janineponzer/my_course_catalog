@@ -2,7 +2,7 @@ import requests
 from bs4 import BeautifulSoup
 from operator import itemgetter
 
-weekdays = ["Mo","Di","Mi","Do","Fr"]
+weekdays = ["Mo","Di","Mi","Do","Fr","semesterbegleitend"]
 
 def get_title():
     title = soup.find("div", class_="modules_container").find("h1").get_text()

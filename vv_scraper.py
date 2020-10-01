@@ -89,7 +89,7 @@ def get_timetable_of(weekday):
             print("\n")
             prev_course = course
 
-
+""" Add url of your programme's webpage in the course catalog here """
 url = requests.get("https://www.fu-berlin.de/vv/de/modul?id=75011&sm=580670")
 # url = requests.get("https://www.fu-berlin.de/vv/de/modul?id=75011&sm=528624")
 
